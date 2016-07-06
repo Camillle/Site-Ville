@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style_diapo.css">
+    <link rel="stylesheet" type="text/css" href="css/li-scroller.css" media="screen" />
+
+    <link href='https://fonts.googleapis.com/css?family=Sintony' rel='stylesheet' type='text/css'>
+    <title>Activite</title>
+
+
+    <!--SCRIPT_TWITTER-->
+    <script>
+    window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));
+    </script><!--fin_script_twitter-->
+
+    <!--SCRIPT-GALERY-->
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!--SCRIPT SCROLL BAR-->
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.li-scroller.1.0.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("ul#ticker").liScroll({travelocity: 0.07});
+      });
+    </script>
+    <!-- FIN SCRIPT SCROLL BAR -->
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="js/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="js/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="js/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="js/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="js/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <!--fin_script_galery-->
+
+  </head>
+
+  <body>
+
+    <!--CONTENT-->
+    <div class="content">
+      <!--HEADER-->
+      <header>
+        <div class="logo">
+          <img class="img_logo" alt="logo" src="img/logo.png"/>
+          <h1 class="title_logo">Plougastel les Trifouniasse</h1>
+        </div>
+        <!--NAV_-->
+        <nav>
+          <ul>
+            <li><a href="index.html"><strong>Accueil</strong></a></li>
+            <li><a href="activite.html"><strong>Activité</strong></a></li>
+            <li><a href="plage.html"><strong>Plage</strong></a></li>
+            <li><a href="contact.html"><strong>Contact</strong></a></li>
+          </ul>
+        </nav>
+      </header><!--fin_header-->
+
+      <!--SCROLLBAR-->
+      <div class="scrollbar">
+        <ul id="ticker">
+          <li><span>10/10/2007</span><a href="#">Repudiandae sint et molestiae non recusandae.</a></li>
+          <li><span>05/11/2007</span><a href="#">The master-builder of human happiness.</a></li>
+          <li><span>10/10/2007</span><a href="#">At vero eos et accusamus et iusto odio dignissimos ducimus.</a></li>
+        </ul>
+        <!--activite picture-->
+        <div class="activite_picture">
+          <div><img alt ="cirque" style="border-radius: 0 0 0 20px;" src="img/cirque.jpg"/></div>
+          <div><img alt ="concert" src="img/concert.jpg"/></div>
+          <div><img alt ="conference" src="img/conference.jpg"/></div>
+          <div><img alt ="course" src="img/course.jpg"/></div>
+          <div><img alt ="sport" src="img/sport.jpeg"/></div>
+          <div><img alt ="pouces" src="img/pouces.jpg"/></div>
+          <div><img alt ="balade" src="img/balade.jpg"/></div>
+          <div><img alt ="village" style="border-radius: 0 0 20px 0" src="img/village.jpeg"/></div>
+        </div>
+      </div><!--fin_activite_picture-->
+
+      <div class="titre">
+        <h2>ACTIVITES</h2>
+      </div>
+
+      <!--ACTIVITE-->
+      <div class="activite">
+
+        <!--activite left-->
+        <div class="activite_left">
+          <div>
+            <p>SPORT</p>
+            <p>25/06/2016</p>
+            <p>Proin pharetra pretium mauris, at hendrerit velit blandit sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+          </div>
+          <div>
+            <p>THEATRE</p>
+            <p>29/06/2016</p>
+            <p>Curabitur consectetur, eros ut fringilla sodales, dui elit consequat arcu, nec tincidunt justo ligula ut erat. In quis porttitor magna, vel bibendum nisl. In non urna rhoncus, eleifend risus eget, tristique magna. </p>
+          </div>
+          <div>
+            <p>CONCERT</p>
+            <p>04/07/2016</p>
+            <p>Phasellus euismod vestibulum accumsan. Suspendisse eget lacus metus. Mauris enim neque, placerat sit amet neque eu, feugiat iaculis lectus. Aenean sit amet accumsan nisl. Sed vel mauris faucibus, fermentum purus quis, gravida neque.  </p>
+          </div>
+          <div>
+            <p>ANIMATION</p>
+            <p>11/07/2016</p>
+            <p>Integer at pharetra leo, id finibus felis. Nam maximus ut magna quis vehicula.  </p>
+          </div>
+        </div><!--fin_activite left-->
+
+        <!--activite right-->
+        <div class="activite_right">
+          <div>
+            <p>SPORT</p>
+            <p>25/06/2016</p>
+            <p>Proin pharetra pretium mauris, at hendrerit velit blandit sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+          </div>
+          <div>
+            <p>THEATRE</p>
+            <p>29/06/2016</p>
+            <p>Curabitur consectetur, eros ut fringilla sodales, dui elit consequat arcu, nec tincidunt justo ligula ut erat. In quis porttitor magna, vel bibendum nisl. In non urna rhoncus, eleifend risus eget, tristique magna. </p>
+          </div>
+          <div>
+            <p>CONCERT</p>
+            <p>04/07/2016</p>
+            <p>Phasellus euismod vestibulum accumsan. Suspendisse eget lacus metus. Mauris enim neque, placerat sit amet neque eu, feugiat iaculis lectus. Aenean sit amet accumsan nisl. Sed vel mauris faucibus, fermentum purus quis, gravida neque.  </p>
+          </div>
+          <div>
+            <p>ANIMATION</p>
+            <p>11/07/2016</p>
+            <p>Integer at pharetra leo, id finibus felis. Nam maximus ut magna quis vehicula.  </p>
+          </div>
+
+        </div><!--fin activite right-->
+      </div><!--fin content activite-->
+
+      <!--SOCIAL-->
+      <div class="social">
+        <!--Twitter-->
+        <div class="twitter">
+          <p>
+              <a class="twitter-timeline" data-lang="fr" data-width="293" data-height="199" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/CVBretagne">Tweets by CVBretagne</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </p>
+        </div>
+        <!--gallery-->
+        <div class="gallery">
+          <a class="fancybox-button" href="img/image1.jpg" title="" style="text-decoration: none;">
+            <img src="img/image1.jpg" alt="image1" style="border-radius: 20px 0 0 0;margin:0 15px 15px 0; width: 100px; height: 100px;"/>
+          </a>
+          <a class="fancybox-button" href="img/image2.jpeg" title="" style="text-decoration: none;">
+            <img src="img/image2.jpeg" alt="image2" style="border-radius: 0 20px 0 0;margin:0 0px 15px 15px;width: 100px; height: 100px;"/>
+          </a>
+          <a class="fancybox-button" href="img/image3.jpg" title="" style="text-decoration: none;">
+            <img src="img/image3.jpg" alt="image3" style="border-radius: 0 0 0 20px;margin: 0 15px 0 0;width: 100px; height: 100px;"/>
+          </a>
+          <a class="fancybox-button" href="img/image4.jpeg" title="" style="text-decoration: none;">
+            <img src="img/image4.jpeg" alt="image4" style="border-radius: 0 0 20px 0;margin:0 0 0 15px; width: 100px; height: 100px;"/>
+          </a>
+          <!--lancement_script_gallery-->
+          <script type="text/javascript">
+            $(document).ready(function() {
+            $(".fancybox-button").fancybox({
+             prevEffect        : 'none',
+             nextEffect        : 'none',
+             closeBtn        : false,
+             helpers        : {
+                 title    : { type : 'inside' },
+                 buttons    : {}
+             }
+            });
+            });
+          </script>
+        </div><!--fin_gallery-->
+        <!--links-->
+        <div class="links">
+           <a href="http://www.saint-brieuc.fr/" target="_blank">Saint-Brieuc</a>
+           <a href="http://www.pontivy.fr/" target="_blank">Pontivy</a>
+           <a href="http://www.ville-plouzane.fr/index.php/en/" target="_blank">Plouzané</a>
+           <a href="http://www.betton.fr/accueil" target="_blank">Betton</a>
+           <a href="http://www.queven.com/" target="_blank">Quéven</a>
+        </div>
+      </div><!--fin_social-->
+
+    </div><!--fin_content-->
+
+  </body>
+</html>

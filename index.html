@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style_diapo.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Sintony' rel='stylesheet' type='text/css'>
+    <title>Accueil</title>
+
+    <!--SCRIPT SLIDER-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+       $(function(){
+          setInterval(function(){
+             $(".slideshow ul").animate({marginLeft:-900},800,function(){
+                $(this).css({marginLeft:0}).find("li:last").after($(this).find("li:first"));
+             })
+          }, 3000);
+       });
+    </script><!--fin_script-->
+
+    <!--SCRIPT_TWITTER-->
+    <script>
+    window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));
+    </script><!--fin_script_twitter-->
+
+    <!--SCRIPT-GALERY-->
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="js/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="js/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="js/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="js/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="js/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <!--fin_script_galery-->
+
+  </head>
+
+  <body>
+
+    <!--CONTENT-->
+    <div class="content">
+
+      <!--HEADER-->
+      <header>
+        <div class="logo">
+          <img class="img_logo" alt="logo" src="img/logo.png"/>
+          <h1 class="title_logo">Plougastel les Trifouniasse</h1>
+        </div>
+        <!--NAV-->
+        <nav>
+          <ul>
+            <li><a href="index.html"><strong>Accueil</strong></a></li>
+            <li><a href="activite.html"><strong>Activité</strong></a></li>
+            <li><a href="plage.html"><strong>Plage</strong></a></li>
+            <li><a href="contact.html"><strong>Contact</strong></a></li>
+          </ul>
+        </nav>
+      </header><!--fin_header-->
+
+      <!--SLIDER-->
+      <div class="slider">
+        <div class="slideshow">
+        	<ul>
+        		<li><img src="img/image1.jpg" alt="image1" width="920" height="300" /></li>
+        		<li><img src="img/image2.jpeg" alt="image2" width="920" height="300" /></li>
+        		<li><img src="img/image3.jpg" alt="image3" width="920" height="300" /></li>
+            <li><img src="img/image4.jpeg" alt="image4" width="920" height="300" /></li>
+        	</ul>
+        </div>
+      </div><!--fin_slider-->
+
+      <div class="titre">
+        <h2>ACCUEIL</h2>
+      </div>
+
+      <!--INFOS-->
+      <div class="infos">
+        <div class="article_1">
+          <p>Donec vitae iaculis nunc. Ut posuere erat at facilisis luctus. Fusce rutrum dolor quis congue viverra. Sed cursus.
+          <br>
+          nibh consectetur vestibulum commodo, libero arcu porttitor tellus, id elementum sapien elit at neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum ac turpis quis malesuada. In aliquam cursus elit, nec sodales mauris.
+          </p>
+          <hr>
+          <p>elit at neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum ac turpis quis malesuada. In aliquam cursus elit, nec sodales mauris.
+          </p>
+        </div>
+        <div class="triangle">
+          <img class="img_triangle" alt="triangle" src="img/triangle.png"/>
+        </div>
+        <div class="article_2">
+          <div class="img_article_2">
+            <center><img class="img_plougastel" alt="plougastel" src="img/img_plougastel.jpg"/></center>
+          </div>
+          <div class="text_article_2">
+            <p>Duis tempor nisl sit amet arcu venenatis, at facilisis ex scelerisque. Ut euismod pharetra elit, non ullamcorper elit.
+            <br>
+            Duis tempor nisl sit amet arcu venenatis, at facilisis ex scelerisque. </p>
+          </div>
+        </div>
+      </div><!--fin_infos-->
+
+      <!--SOCIAL-->
+      <div class="social">
+        <!--twitter-->
+        <div class="twitter">
+          <p>
+              <a class="twitter-timeline" data-lang="fr" data-width="293" data-height="199" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/CVBretagne">Tweets by CVBretagne</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </p>
+        </div><!--fin_twitter-->
+        <!--gallery-->
+        <div class="gallery">
+          <a class="fancybox-button" rel="fancybox-button" href="img/image1.jpg" title="" style="text-decoration: none;">
+            <img src="img/image1.jpg" alt="image1" style="border-radius: 20px 0 0 0;margin:0 15px 15px 0; width: 100px; height: 100px;"/>
+          </a>
+          <a class="fancybox-button" rel="fancybox-button" href="img/image2.jpeg" title="" style="text-decoration: none;">
+            <img src="img/image2.jpeg" alt="image2" style="border-radius: 0 20px 0 0;margin:0 0px 15px 15px;width: 100px; height: 100px;"/>
+          </a>
+          <a class="fancybox-button" rel="fancybox-button" href="img/image3.jpg" title="" style="text-decoration: none;">
+            <img src="img/image3.jpg" alt="image3" style="border-radius: 0 0 0 20px;margin: 0 15px 0 0;width: 100px; height: 100px;"/>
+          </a>
+          <a class="fancybox-button" rel="fancybox-button" href="img/image4.jpeg" title="" style="text-decoration: none;">
+            <img src="img/image4.jpeg" alt="image4" style="border-radius: 0 0 20px 0;margin:0 0 0 15px; width: 100px; height: 100px;"/>
+          </a>
+          <!--lancement script_gallery-->
+          <script type="text/javascript">
+            $(document).ready(function() {
+            $(".fancybox-button").fancybox({
+             prevEffect        : 'none',
+             nextEffect        : 'none',
+             closeBtn        : false,
+             helpers        : {
+                 title    : { type : 'inside' },
+                 buttons    : {}
+             }
+            });
+            });
+          </script>
+        </div><!--fin_gallery-->
+         <div class="links">
+           <a href="http://www.saint-brieuc.fr/" target="_blank">Saint-Brieuc</a>
+           <a href="http://www.pontivy.fr/" target="_blank">Pontivy</a>
+           <a href="http://www.ville-plouzane.fr/index.php/en/" target="_blank">Plouzané</a>
+           <a href="http://www.betton.fr/accueil" target="_blank">Betton</a>
+           <a href="http://www.queven.com/" target="_blank">Quéven</a>
+        </div><!--fin_link-->
+      </div><!--fin_social-->
+    </div><!--fin_content-->
+  </body>
+</html>
